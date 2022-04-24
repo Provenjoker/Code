@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- DEfines the meta charset-->
+    <meta charset="UTF-8">
+    <!-- links the style sheet to the page-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="dataLoader.js"></script>
+    <script src="code.js"></script>
+    <title>Uat space Page</title>
+    </head>
+    <script> var data = getData(); </script>
+    <body>
+        <table>
+            <td><img src="UATspaceLogo-1.jpg"></td>
+            <td><h1 class="title">UAT Space Program </h1></td>
+        </table>
+        <nav class="navB">
+            <ul>
+                <li class="inline"><a href="index.html"> Home</a></li>
+                <li class="inline"><a href="main.html"> Main Page</a></li>
+            </ul>
+        </nav>
+        <table border="2" id="data">
+            <col>
+            <col>
+            <thread>
+                <th class="title"> Data Type</th>
+                <th class="title">Reading</th>
+            </thread>
+            <tbody>
+                <tr class="border" id="seconds"></tr>
+                <tr class="border" id="latitude"></tr>
+                <tr class="border" id="longitude"></tr>
+                <tr class="border" id="gps"></tr>
+                <tr class="border" id="bmpSensorAltitdue"></tr>
+                <tr class="border" id="bmpSensorPressure"></tr>
+                <tr class="border" id="bmpSensorTemp"></tr>
+                <tr class="border" id="digitalSensorTemp"></tr>
+                <tr class="border"  id="cssSensorTemp"></tr>
+                <tr class="border" id="cssSensor_eC02"></tr>
+                <tr class="border" id="cssSensorTVOC"></tr>
+                <tr class="border" id="uv"></tr>
+                <tr class="border" id="accelX"></tr>
+                <tr class="border" id="accelY"></tr>
+                <tr class="border" id="accelZ"></tr>
+                <tr class="border" id="magX"></tr>
+                <tr class="border" id="magY"></tr>
+                <tr class="border" id="magZ"></tr>
+                <tr class="border" id="gyroX"></tr> 
+                <tr class="border" id="gyroY"></tr>
+                <tr class="border" id="gyroZ"></tr>
+             </tbody>
+        </table>
+        <p id="timeClock"> time Displayed when running</p>
+        <button id="startButton" class="lgButton" onclick="start();"> Start </button>
+        <button id="stopButton" class="lgButton" onclick="stop();" > Stop </button>
+        <br>
+        <br>
+        <p id="countDownTimer" class="groovy">Starting countdown...</p>
+        <button onclick="playCraps();"> Play Craps </button>
+        <p class="groovy" id="die1Res">Waiting on die 1...</p>
+        <p class="groovy" id="die2Res">Waitig on die 2...</p>
+        <p id="sumRes"> Waiting on the sum...</p>
+        <p class="groovy" id="finalRes"> Waiting on final result...</p>
+        <p>Wins are:
+        <div id="winRes">0</div>
+        </p>
+        <p>Losses are:
+        <div id="lossRes">0</div>
+        </p>
+        <p>Ties Are:
+        <div id="tieRes">0</div>
+        </p>
+        <br>
+        <br>
+        <script>
+            var fallLaunch = new Mission("To boldy go....", 100, 31, "October",2021,"Fiona",3);
+            var springLaunch = new Mission("to go again...", 15, 12, "April", 2021, "Polaris",5);
+        </script>
+        <button class="lgButton" onclick="launchFall();">Launch Fall Mission </button>
+        <button class="lgButton" onclick="displayFall();">Display Fall Mission</button>
+        <br>
+        <button class="lgButton" onclick="launchSpring();">Launch Spring Misson</button>
+        <button class="lgButton" onclick="displaySpring();">Display Spring Mission</button>
+        <br>
+        <br>
+        <button class="lgButton" onclick="playSpace();">Play Space Station Sounds</button>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(22, 1, 1);
+    color: rgb(227, 238, 231);
+}
+.title{
+    color: #64f503;
+    text-align: center;
+}
+/* takes away the bullets for the navagation bar */
+ul{
+    list-style-type: none;;
+}
+/* takes the list aand puts in inline to the page also adds a padding of 100px */
+
+.navB{
+    padding: 20px;
+    text-align: center;
+    font-size: 200%;
+}
+a{
+    font-weight: bold;
+    font-style: italic;
+    color:rgb(6, 70, 245);
+}
+p{
+    color: rgb(21, 0, 255);
+}
+.border{
+    border: 3px soild rgb(0, 195, 255) ;
+}
+
+.lgButton{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(62, 74, 75);
+    border-radius: 12.5px;
+    border-color: rgb(42, 122, 49);
+}
+.inline{
+    display: inline;
+    padding: 50px;
+}
+.footer{
+    text-align: center;
+    padding: 30px;
+    font-size: xx-large;
+}
